@@ -10,13 +10,13 @@
 //  *   Toggle Line Comment item from the Edit menu.
 //  */
 
-// import java.awt.*;
-// import java.awt.event.*;
-// import java.io.File;
-// import javax.swing.*;
-// import javax.swing.filechooser.FileFilter;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.File;
+import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
 
-// public class MazeApp extends JFrame implements ActionListener {
+//public class MazeApp extends JFrame implements ActionListener {
     
 //     // Initial font size for the display
 //     private static int fontSize = 16;
