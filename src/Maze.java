@@ -4,18 +4,24 @@ import java.util.Scanner;
 
 public class Maze {
     private Square [][] maze;
-   
-    
+    private Square start;
+    private Square finish;
+    private int numrows;
+    private int numcols;
 
 
 
 
     public boolean loadMaze(String filename){
-        Scanner scan = new Scanner(System.in);
-        int numrows = Integer.parseInt(scan.next());
-        scan.next();
-        int numcols = Integer.parseInt(scan.next());
-        scan.next();
+        Scanner scan = new Scanner(filename);
+
+
+
+        numrows = Integer.parseInt(scan.next());
+        
+        numcols = Integer.parseInt(scan.next());
+        
+        scan.nextLine();
 
         System.out.println(numrows);
 
@@ -24,9 +30,13 @@ public class Maze {
         for (int row=0; row < numrows; row++) {
             for (int col=0; col < numcols; col++) {
                 Square sq = new Square(row,col,scan.next());
-                scan.next();
+                
+                if(sq.getType().equals("S"))
+                    start = sq;
+                if(sq.getType().equals("F"))
+                    finish = sq;
             maze[row][col] = sq;
-        }
+        } scan.nextLine();
 
        
     }
@@ -60,8 +70,33 @@ public class Maze {
         return neighbors;
     }
 
+    public Square getStart(){
+        return start;
+    }
+
+    public Square getFinish(){
+        return finish;
+    }
+
+    public void reset(){
+        for (int row=0; row < numrows; row++) {
+            for (int col=0; col < numcols; col++) {
+                Square sq = maze[row][col];
+                sq.Reset();
+            }
+        }
+    }
      
     
+    public String tostring(){
 
+        String Maze = "";
+        for (int row=0; row < numrows; row++) {
+            for (int col=0; col < numcols; col++) {
+                Maze += maze[row][col].toString();
+            }
+        }
+            return Maze;
+    }
 
 }
