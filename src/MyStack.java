@@ -1,35 +1,44 @@
+import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Stack;
 
-public class MyStack implements StackADT {
+public class MyStack<T> implements StackADT<T> {
 
     private Stack<Square> squares;
+    private ArrayList <T> myStack = new ArrayList<>(); 
 
-    public Square pop() throws NoSuchElementException {
-        Square element = squares.remove(size() - 1);
+    public T pop() throws NoSuchElementException {
+        T element = myStack.remove(size() - 1);
         return element;
     }
 
-    public void push(Square item) {
-        squares.add(item);
+    public void push(T item) {
+        myStack.add(item);
     }
 
-    public Square top() throws NoSuchElementException {
-        Square element = squares.remove(size() - 1);
-        squares.add(size(), element);
-        return element;
-
+    public T top() throws NoSuchElementException
+    {
+        return myStack.get(size()-1);
+        
     }
 
-    public int size() {
-
+    public int size()
+    {
+        return myStack.size(); 
     }
 
-    public boolean isEmpty() {
-
+    public boolean isEmpty()
+    {
+        if (myStack.get(0)==null)
+        {
+            return true; 
+        }
+        return false; 
     }
 
-    public void clear() {
+    public void clear()
+    {
+        myStack = new ArrayList<>(); 
 
     }
 
