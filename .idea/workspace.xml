@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="implemented stack, needs testing" />
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="implemented stack, needs testing">
+      <change afterPath="$PROJECT_DIR$/src/MyQueue.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="mazeSkeleton" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "stack",
+    "git-widget-placeholder": "queue",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,6 +72,7 @@
       <workItem from="1698429269381" duration="749000" />
       <workItem from="1698774363263" duration="2472000" />
       <workItem from="1698861285283" duration="2452000" />
+      <workItem from="1698948951244" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="implemented stack, needs testing">
       <option name="closed" value="true" />
