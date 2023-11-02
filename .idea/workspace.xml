@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="implemented stack, needs testing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "stack",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,8 +69,17 @@
       <workItem from="1698427758926" duration="1381000" />
       <workItem from="1698429269381" duration="749000" />
       <workItem from="1698774363263" duration="2472000" />
-      <workItem from="1698861285283" duration="2010000" />
+      <workItem from="1698861285283" duration="2452000" />
     </task>
+    <task id="LOCAL-00001" summary="implemented stack, needs testing">
+      <option name="closed" value="true" />
+      <created>1698863501264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698863501264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented stack, needs testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented stack, needs testing" />
   </component>
 </project>
