@@ -10,20 +10,30 @@ public class Unit_Test {
 
         Maze test = new Maze();
 
-        if(test.loadMaze(filename)){
-            test.getStart();
-            test.getFinish();
-            test.getNeighbors(test.getStart());
+        Square sq = new Square(2, 2, "0");
 
-            test.toString();
+        if(test.loadMaze(filename)){
+
+            System.out.println(test.getStart().getRow() + " " + test.getStart().getCol());
+            System.out.println(test.getFinish().getRow() + " " + test.getFinish().getCol());
+
+
+            ArrayList<Square> nums = new ArrayList (test.getNeighbors(sq)); 
+
+            for(Square num: nums){
+                System.out.println(num.getRow()+" "+num.getCol());
+            }
+
+            
 
             test.reset();
 
-            test.tostring();
+            System.out.println(test.tostring());
 
         }
 
 
+        
 
-
-    }}
+    }
+}
