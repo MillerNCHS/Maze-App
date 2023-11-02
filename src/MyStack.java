@@ -1,20 +1,17 @@
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-
 public class MyStack<T> implements StackADT<T> {
 
-    private ArrayList <T> myStack; 
-    int size = 0; 
+    private ArrayList<T> myStack;
+    int size = 0;
 
-    public MyStack()
-    {
+    public MyStack() {
         this.myStack = new ArrayList<>();
     }
 
     public T pop() throws NoSuchElementException {
-        if (this.isEmpty())
-        {
+        if (this.isEmpty()) {
             throw new NoSuchElementException();
         }
         T element = myStack.remove(size() - 1);
@@ -27,46 +24,38 @@ public class MyStack<T> implements StackADT<T> {
         myStack.add(item);
     }
 
-    public T top() throws NoSuchElementException
-    {
-        if (this.isEmpty())
-        {
+    public T top() throws NoSuchElementException {
+        if (this.isEmpty()) {
             throw new NoSuchElementException();
         }
-        return myStack.get(size()-1);
-        
+        return myStack.get(size() - 1);
+
     }
 
-    public int size()
-    {
-        return size; 
+    public int size() {
+        return size;
     }
 
-    public boolean isEmpty()
-    {
-        if (myStack.get(0)==null)
-        {
-            return true; 
+    public boolean isEmpty() {
+        if (myStack.get(0) == null) {
+            return true;
         }
-        return false; 
+        return false;
     }
 
-    public void clear()
-    {
-        myStack = new ArrayList<>(); 
+    public void clear() {
+        myStack = new ArrayList<>();
 
     }
 
-    public String toString()
-    {
-        String display = "["; 
-        for (T x: this.myStack)
-        {
-            display+=x+" "; 
+    public String toString() {
+        String display = "[";
+        for (T x : this.myStack) {
+            display += x + " ";
         }
-        display += " "; 
+        display += " ";
 
-        return display; 
+        return display;
     }
 
 }
