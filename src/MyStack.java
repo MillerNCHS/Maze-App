@@ -37,10 +37,7 @@ public class MyStack<T> implements StackADT<T> {
     }
 
     public boolean isEmpty() {
-        if (myStack.get(0) == null) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
 
     public void clear() {
