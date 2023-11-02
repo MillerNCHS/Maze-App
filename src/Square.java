@@ -1,6 +1,7 @@
 public class Square{
-    private int row, col;
-    private int type;
+    private final int row;
+    private final int col;
+    private final int type;
     private char status;
     Square(int row, int col, int type){
         this.type = type;
@@ -15,14 +16,27 @@ public class Square{
     public int getCol(){
         return this.col;
     }
+
+    /**
+     *  sets the status of the square to "explored"
+     */
     public void explore(){
         this.status = '.';
     }
+    /**
+     *  sets the status of the square as on the final path to solution
+     */
     public void solution(){
         this.status = 'x';
     }
+    /**
+     *  resets the square to be on the worklist
+     */
     public void reset(){
         this.status = 'o';
+    }
+    public char getStatus(){
+        return this.status;
     }
     public int getType(){
         return this.type;

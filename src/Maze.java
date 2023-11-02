@@ -12,6 +12,7 @@ public class Maze{
      */
     public Maze(){
         loadMaze("src/maze-1.txt");
+
         this.start = start;
         this.finish = finish;
     }
@@ -39,7 +40,7 @@ public class Maze{
 
     public ArrayList<Square> getNeighbors(Square sq){
 
-        ArrayList<Square> neighbors = ArrayList<>();
+        ArrayList<Square> neighbors = new ArrayList<>();
         Square n1, n2, n3, n4 = null;
         
         neighbors.add(this.maze[sq.getRow() + 1][sq.getCol()]);
