@@ -3,7 +3,7 @@ import java.util.Queue;
 public abstract class mazeSolver {
 
     protected Maze maze;
-    private Queue worklist = new Queue();
+    private myQueue worklist = new myQueue();
     worklist.add();
 
 
