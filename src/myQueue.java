@@ -1,15 +1,18 @@
 import java.util.NoSuchElementException;
 import java.util.Queue;
+
+import org.junit.Test.None;
+
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class myQueue implements QueueADT {
-    private Queue<Square> squares;
-    private Square start;
-    private Square end;
+public class myQueue implements QueueADT<Square> {
+    private Node start;
+    private Node end;
 
     public myQueue() {
-        squares = new LinkedList<>();
+        start = null;
+        end = null;
     }   
     
     /**
@@ -17,8 +20,16 @@ public class myQueue implements QueueADT {
      * @param item the data item to add (of type T)
      */
     public void enqueue(Square item) {
-        end.next = item;
-        end = item;
+        Node foo = new Node(item);
+        
+        if (start == null) {
+            start = foo;
+            end = foo;
+            return;
+        }
+
+        end.next = foo;
+        end = foo;
     }
 
     /**
@@ -27,7 +38,12 @@ public class myQueue implements QueueADT {
      * @throws NoSuchElementException if the queue is empty
      */
     public Square dequeue() throws NoSuchElementException {
-        return start;
+        if (start == null)
+            throw new NoSuchElementException();
+        
+            Square item = start.data;
+        start = start.next;
+        return item;
     }
 
     /**
@@ -35,36 +51,55 @@ public class myQueue implements QueueADT {
      * @return the front item in the queue
      * @throws NoSuchElementException if the queue is empty
      */
-    T front() throws NoSuchElementException;
+    public Square front() throws NoSuchElementException {
+        if (start == null)
+            throw new NoSuchElementException();
+        return start.data;
+    }
 
     /**
      * Find how many items are in the queue
      * @return the number of items in the queue
      */
-    int size();
+    public int size() {
+        int x = 0;
+
+        Node foo = start;
+        while(foo != null){
+            x++;
+            foo = foo.next;
+        }
+
+        return x;
+    }
 
     /**
      * Determine if the queue is empty
      * @return true if the size is 0, false otherwise
      */
-    boolean isEmpty();
+    public boolean isEmpty() {
+        if (start == null) return true;
+        return false;
+    }
 
     /**
      * Clear out the data structure
      */
-    void clear();
+    public void clear() {
+        start = null;
+        end = null;
+    }
 
 
     // Node class
     private class Node {
-        public Object data; 
+        public Square data; 
         public Node next;
 
-        public Node(Object x) {
+        public Node(Square x) {
             this.data = x;
-            this.next = void;
+            this.next = null;
         }
-
     }
 
 }
