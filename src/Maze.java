@@ -11,29 +11,35 @@ public class Maze{
      * need to change - will
      */
     public Maze(){
-        loadMaze("src/maze-1.txt");
-
+        try {
+            loadMaze("src/maze-1.txt");
+        }catch(FileNotFoundException e){
+            System.out.println("error opening/processing file");
+        }
         this.start = start;
         this.finish = finish;
     }
 
-    public boolean loadMaze (String fname){
+    public boolean loadMaze (String fname) throws FileNotFoundException {
         int numRows = 0;
         int numCols = 0;
-
+        Scanner scan = new Scanner(new File(fname));
+        //gets the size of the maze
         try{
-            Scanner scan = new Scanner(new File(fname));
             numRows = scan.nextInt();
             numCols = scan.nextInt();
-            System.out.println(numCols + " " +numCols);
+            System.out.println(numRows + " " +numCols);
         }
         catch(Exception e){
             return false;
         }
+
         this.maze = new Square[numRows][numCols];
         for (int row=0; row < numRows; row++) {
             for (int col=0; col < numCols; col++) {
-                maze[row][col] = null;}  }
+                maze[row][col] = new Square(row, col, scan.nextInt());
+            }
+        }
 
         return true;
     }
