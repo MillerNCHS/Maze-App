@@ -16,13 +16,11 @@ public class Maze{
         }catch(FileNotFoundException e){
             System.out.println("error opening/processing file");
         }
-        this.start = start;
-        this.finish = finish;
     }
 
-    public boolean loadMaze (String fname) throws FileNotFoundException {
-        int numRows = 0;
-        int numCols = 0;
+    public void loadMaze (String fname) throws FileNotFoundException {
+        int numRows;
+        int numCols;
         Scanner scan = new Scanner(new File(fname));
         //gets the size of the maze
         try{
@@ -31,17 +29,24 @@ public class Maze{
             System.out.println(numRows + " " +numCols);
         }
         catch(Exception e){
-            return false;
+            return;
         }
 
         this.maze = new Square[numRows][numCols];
         for (int row=0; row < numRows; row++) {
             for (int col=0; col < numCols; col++) {
-                maze[row][col] = new Square(row, col, scan.nextInt());
+                int val = scan.nextInt();
+                maze[row][col] = new Square(row, col, val);
+                if(val == 2){
+
+                    start = maze[row][col];
+                }else if (val == 3) {
+                    finish = maze[row][col];
+
+                }
             }
         }
 
-        return true;
     }
 
     public ArrayList<Square> getNeighbors(Square sq){
@@ -54,10 +59,7 @@ public class Maze{
         neighbors.add(this.maze[sq.getRow()][sq.getCol() + 1]);
         neighbors.add(this.maze[sq.getRow()][sq.getCol() - 1]);
 
-        for(Square neighbor: neighbors){
-            if (neighbor == null)
-                neighbors.remove(neighbor);
-        }
+        neighbors.removeIf(Objects::isNull);
 
         return neighbors;    }
 
@@ -70,8 +72,8 @@ public class Maze{
     }
 
     public void reset(){
-        for(int row = 0;row< maze.length;row++) {
-            for (Square i : this.maze[row]) {
+        for (Square[] squares : maze) {
+            for (Square i : squares) {
                 i.reset();
             }
         }
@@ -79,11 +81,14 @@ public class Maze{
 
     public String toString(){
         
-        String str = "";
-
-        for (int row=0; row < numRows; row++) {
-            for (int col=0; col < numCols; col++) {
-                str += maze[row][col];}  str += "\n"}
-        
+        StringBuilder str = new StringBuilder();
+        int numCols = maze[0].length;
+        for (Square[] squares : maze) {
+            for (int col = 0; col < numCols; col++) {
+                str.append(squares[col]);
+            }
+            str.append("\n");
+        }
+        return str.toString();
     }
 }
