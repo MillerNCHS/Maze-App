@@ -16,6 +16,7 @@ public class MyStack<T> implements StackADT
      }
 
      public T pop() throws NoSuchElementException{
+         if(!isEmpty()){
          try{
             return (T) (list.remove(list.size()-1));
             
@@ -23,17 +24,22 @@ public class MyStack<T> implements StackADT
          catch(NoSuchElementException el){
             System.out.println("This is not an element");
             return null;
-         }
+         }}
+         else 
+            return null;
      }
 
      public T top() throws NoSuchElementException{
+        if(!isEmpty()){
          try{
             return (T) (list.get(0));
          }
          catch (NoSuchElementException el){
             System.out.println("This is not an element");
             return null;
-         }
+         }}
+      else
+         return null;
      }
 
      public int size(){

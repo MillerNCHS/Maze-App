@@ -16,10 +16,8 @@ public abstract class MazeSolver{
     }
     //Create a (non-abstract) constructor that takes a Maze as a parameter and stores it in a variable that the children classes can access.
     boolean isSolved(){
-        if(isEmpty())
-            return false;
-        
-        return true;
+        boolean solve = false;
+        ArrayList<Square> neighbors = maze.getNeighbors(maze);
     }
     /*A non-abstract method that the application program can use to see if this algorithm has solved this maze. That is, has it determined the path 
     to the exit or if there is no path.
