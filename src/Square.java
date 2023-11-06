@@ -6,7 +6,7 @@ public class Square {
     private int col;
     private String originalType;
 
-    public Square(int Row, int Col, String Type){
+    public Square(int Row, int Col, String Type, Square Previous){
         this.row = Row;
         this.col = Col;
         this.type = Type;
@@ -23,6 +23,14 @@ public class Square {
     }
     public String getType(){
         return type;
+    }
+
+    public Square getPrevious(){
+        return Previous;
+    }
+
+    public void setPrevious(Square sq){
+        this.Previous = sq;
     }
     
 
