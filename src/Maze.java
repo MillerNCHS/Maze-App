@@ -78,6 +78,12 @@ public class Maze{
     }
 
     public String toString(){
-        return "";
+        
+        String str = "";
+
+        for (int row=0; row < numRows; row++) {
+            for (int col=0; col < numCols; col++) {
+                str += maze[row][col];}  str += "\n"}
+        
     }
 }
