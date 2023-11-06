@@ -1,5 +1,6 @@
 
 public class Square {
+    private Square Previous;
     private String type;
     private int row;
     private int col;
@@ -10,6 +11,7 @@ public class Square {
         this.col = Col;
         this.type = Type;
         this.originalType = Type;
+        this.Previous = null;
 
     }
 
