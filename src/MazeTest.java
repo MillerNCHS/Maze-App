@@ -35,9 +35,9 @@ public class MazeTest{
         // Checking Neighbors (start, center, one corner)
         maze.getNeighbors(maze.getStart());
 
-        maze.getNeighbors(maze[1][1]);
+        maze.getNeighbors(maze.getData()[1][1]);
 
-        maze.getNeighbors(maze[0][2]);
+        maze.getNeighbors(maze.getData()[0][2]);
 
         /*
          * toString Method for MAZE

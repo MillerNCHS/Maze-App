@@ -5,20 +5,20 @@ public class Maze{
 
     private Square start;
     private Square finish;
-    private Square[][] maze;
+    private Square[][] data;
 
     /**
      * need to change - will
      */
     public Maze(){
         try {
-            loadMaze("src/maze-1.txt");
+            loadMaze("maze-1");
         }catch(FileNotFoundException e){
             System.out.println("error opening/processing file");
         }
     }
 
-    public void loadMaze (String fname) throws FileNotFoundException {
+    public boolean loadMaze (String fname) throws FileNotFoundException {
         int numRows;
         int numCols;
         Scanner scan = new Scanner(new File(fname));
@@ -29,23 +29,24 @@ public class Maze{
             System.out.println(numRows + " " +numCols);
         }
         catch(Exception e){
-            return;
+            return false;
         }
 
-        this.maze = new Square[numRows][numCols];
+        this.data = new Square[numRows][numCols];
         for (int row=0; row < numRows; row++) {
             for (int col=0; col < numCols; col++) {
                 int val = scan.nextInt();
-                maze[row][col] = new Square(row, col, val);
+                data[row][col] = new Square(row, col, val);
                 if(val == 2){
 
-                    start = maze[row][col];
+                    start = data[row][col];
                 }else if (val == 3) {
-                    finish = maze[row][col];
+                    finish = data[row][col];
 
                 }
             }
         }
+        return true;
 
     }
 
@@ -54,10 +55,10 @@ public class Maze{
         ArrayList<Square> neighbors = new ArrayList<>();
         Square n1, n2, n3, n4 = null;
         
-        neighbors.add(this.maze[sq.getRow() + 1][sq.getCol()]);
-        neighbors.add(this.maze[sq.getRow() - 1][sq.getCol()]);
-        neighbors.add(this.maze[sq.getRow()][sq.getCol() + 1]);
-        neighbors.add(this.maze[sq.getRow()][sq.getCol() - 1]);
+        neighbors.add(this.data[sq.getRow() + 1][sq.getCol()]);
+        neighbors.add(this.data[sq.getRow() - 1][sq.getCol()]);
+        neighbors.add(this.data[sq.getRow()][sq.getCol() + 1]);
+        neighbors.add(this.data[sq.getRow()][sq.getCol() - 1]);
 
         neighbors.removeIf(Objects::isNull);
 
@@ -71,8 +72,12 @@ public class Maze{
         return this.finish;
     }
 
+    public Square[][] getData() {
+        return data;
+    }
+
     public void reset(){
-        for (Square[] squares : maze) {
+        for (Square[] squares : data) {
             for (Square i : squares) {
                 i.reset();
             }
@@ -82,8 +87,8 @@ public class Maze{
     public String toString(){
         
         StringBuilder str = new StringBuilder();
-        int numCols = maze[0].length;
-        for (Square[] squares : maze) {
+        int numCols = data[0].length;
+        for (Square[] squares : data) {
             for (int col = 0; col < numCols; col++) {
                 str.append(squares[col]);
             }
