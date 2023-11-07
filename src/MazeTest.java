@@ -29,8 +29,8 @@ public class MazeTest{
         Square tempStart = maze.getStart();
         Square tempFinish = maze.getFinish();
 
-        System.out.println(tempStart.getRow() + " " + tempStart.getCol());
-        System.out.println(tempFinish.getRow() + " " + tempFinish.getCol());
+        System.out.println("start coords" + tempStart.getCol() + " " + tempStart.getRow());
+        System.out.println("finish coords" + tempFinish.getCol() + " " + tempFinish.getRow());
 
         // Checking Neighbors (start, center, one corner)
         maze.getNeighbors(maze.getStart());
@@ -39,6 +39,9 @@ public class MazeTest{
 
         maze.getNeighbors(maze.getData()[0][2]);
 
+
+        //printing toString
+        System.out.println(maze);
         /*
          * toString Method for MAZE
         

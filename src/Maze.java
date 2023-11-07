@@ -12,7 +12,7 @@ public class Maze{
      */
     public Maze(){
         try {
-            loadMaze("maze-1");
+            loadMaze("D:\\Documents\\GitHub\\Maze-App\\src\\maze-2");
         }catch(FileNotFoundException e){
             System.out.println("error opening/processing file");
         }
@@ -26,7 +26,7 @@ public class Maze{
         try{
             numRows = scan.nextInt();
             numCols = scan.nextInt();
-            System.out.println(numRows + " " +numCols);
+            System.out.println("numRows:" + numRows + " numCols:" +numCols);
         }
         catch(Exception e){
             return false;
@@ -54,15 +54,23 @@ public class Maze{
 
         ArrayList<Square> neighbors = new ArrayList<>();
         Square n1, n2, n3, n4 = null;
-        
-        neighbors.add(this.data[sq.getRow() + 1][sq.getCol()]);
-        neighbors.add(this.data[sq.getRow() - 1][sq.getCol()]);
-        neighbors.add(this.data[sq.getRow()][sq.getCol() + 1]);
-        neighbors.add(this.data[sq.getRow()][sq.getCol() - 1]);
+        try{
+            neighbors.add(this.data[sq.getRow() + 1][sq.getCol()]);
+        }catch(ArrayIndexOutOfBoundsException ignored){}
+        try {
+            neighbors.add(this.data[sq.getRow() - 1][sq.getCol()]);
+        }catch (ArrayIndexOutOfBoundsException ignored){}
+        try {
+            neighbors.add(this.data[sq.getRow()][sq.getCol() + 1]);
+        }catch (ArrayIndexOutOfBoundsException ignored){}
+        try{
+            neighbors.add(this.data[sq.getRow()][sq.getCol() - 1]);
+        }catch (ArrayIndexOutOfBoundsException ignored){}
 
         neighbors.removeIf(Objects::isNull);
 
-        return neighbors;    }
+        return neighbors;
+    }
 
     public Square getStart(){
         return this.start;
