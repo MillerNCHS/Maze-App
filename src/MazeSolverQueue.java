@@ -1,9 +1,9 @@
 public class MazeSolverQueue extends MazeSolver {
 
-  MyQueue<Square> queue;
-  public MazeSolverQueue {
+  MyQueue queue;
+  MazeSolverQueue(){
     super(new Maze()); 
-    queue = new MyQueue<>();
+    queue = new MyQueue();
   }
 
   public void makeEmpty(){
@@ -11,14 +11,14 @@ public class MazeSolverQueue extends MazeSolver {
   }
 
   public boolean isEmpty(){
-    return queue.isEmpty()
+    return queue.isEmpty();
   }
 
   public void add(Square sq){
     queue.enqueue(sq);
   }
 
-  public Square next();
+  public Square next(){
     return queue.dequeue();
   }
 
