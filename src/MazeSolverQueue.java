@@ -19,7 +19,7 @@ public class MazeSolverQueue extends MazeSolver {
   }
 
   public Square next();
-    queue.next();
+    return queue.dequeue();
   }
 
 }
