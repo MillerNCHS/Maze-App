@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="added &quot;previous&quot; variable to square class and methods to access and modify it">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze-App/Square.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MazeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolverQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolverQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "mazeSolver",
+    "git-widget-placeholder": "queueSolver",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

@@ -1,7 +1,7 @@
-public class stackSolver extends MazeSolver{
+public class MazeSolverStack extends MazeSolver{
     private MyStack worklist;
-    stackSolver(){
-        super(new Maze());
+    MazeSolverStack(Maze mz){
+        super(mz);
         worklist = new MyStack();
     }
     public void makeEmpty(){
