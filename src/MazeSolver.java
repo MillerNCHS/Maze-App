@@ -39,7 +39,7 @@ public abstract class MazeSolver {
 
     public boolean isSolved() {
 
-        return isEmpty() || solutionCoords != null;
+        return isEmpty() || (solutionCoords != null && next().getType() == 3);
     }
 
     public String getPath() {
