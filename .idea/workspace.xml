@@ -4,6 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+        <entry key="$PROJECT_DIR$" value="maze" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +86,6 @@
       <workItem from="1698429269381" duration="749000" />
       <workItem from="1698774363263" duration="2472000" />
       <workItem from="1698861285283" duration="2452000" />
-      <workItem from="1698948951244" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="implemented stack, needs testing">
       <option name="closed" value="true" />
@@ -100,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699327622232</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path.">
+      <option name="closed" value="true" />
+      <created>1699353756901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699353756901</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented stack, needs testing" />
     <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
+    <MESSAGE value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
+    <option name="LAST_COMMIT_MESSAGE" value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
   </component>
 </project>
