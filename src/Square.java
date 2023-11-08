@@ -3,11 +3,13 @@ public class Square{
     private final int col;
     private final int type;
     private char status;
+    private Square previous;
     Square(int row, int col, int type){
         this.type = type;
         this.row = row;
         this.col = col;
         this.status = 'o';
+        previous = null;
     }
     public int getRow(){
         return row;
@@ -38,6 +40,14 @@ public class Square{
     public char getStatus(){
         return this.status;
     }
+
+    public Square getPrevious() {
+        return previous;
+    }
+    public void setPrevious(Square previous){
+        this.previous = previous;
+    }
+
     public int getType(){
         return this.type;
     }

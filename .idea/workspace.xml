@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path.">
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="queue done, please test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "mazeSolver",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -144,6 +145,7 @@
     <MESSAGE value="implemented stack, needs testing" />
     <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
     <MESSAGE value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
-    <option name="LAST_COMMIT_MESSAGE" value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
+    <MESSAGE value="queue done, please test" />
+    <option name="LAST_COMMIT_MESSAGE" value="queue done, please test" />
   </component>
 </project>
