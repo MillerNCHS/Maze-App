@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Stack;
 
 public abstract class MazeSolver {
 
@@ -50,7 +51,54 @@ public abstract class MazeSolver {
     }
 
     public Square step(){
+        Square current = null;
+        ArrayList<Square> neighbors;
+        //Is the worklist empty? If so, the exit is unreachable; terminate the algorithm.
+        if(!isEmpty()){
+            //Otherwise, grab the "next" location to explore from the worklist.
+            current = next();
 
+            //Does the location correspond to the exit square? If so, the finish was reachable; terminate the algorithm and output the path you found.
+            if(current.getType()==3){
+                //recant current worklist into a stack
+                Stack<Square> finalPath = new Stack<>();
+                Square iter = current;
+                while(iter.getType() != 2){
+                    finalPath.push(iter);
+                    iter = iter.getPrevious();
+                    iter.setStatus('X');
+                }
+
+                //generating output string...
+                StringBuilder sol = new StringBuilder();
+                while(!finalPath.isEmpty()){
+                    iter = finalPath.pop();
+                    sol.append("(").append(iter.getCol()).append(", ").append(iter.getRow()).append("), ");
+                }
+                solutionCoords = new String(sol);
+                return current;
+            }
+
+            //normal behavior
+            //compute all the adjacent up, right, down, left locations that are inside the maze and aren't walls, and
+            neighbors = maze.getNeighbors(current);
+            for(Square s : neighbors){
+                //checks if neighboring square is clear, adds to worklist
+                //add them to the worklist for later exploration provided they have not previously been added to the worklist.
+                if(s.getType()==0){
+                    s.setPrevious(current);
+                    s.setStatus('o');
+                    add(s);
+                }else if(s.getType()==3){
+                    s.setPrevious(current);
+                    add(s);
+                    break;//should skip to next step and compute ending directly ideally
+                }
+            }
+            current.setStatus('.');
+        }
+        //returns the square stepped
+        return current;
     }
 
     public void solve(){

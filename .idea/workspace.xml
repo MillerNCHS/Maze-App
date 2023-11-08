@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="queue done, please test">
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="added &quot;previous&quot; variable to square class and methods to access and modify it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze-App/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699353756901</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added &quot;previous&quot; variable to square class and methods to access and modify it">
+      <option name="closed" value="true" />
+      <created>1699429523915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699429523915</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +157,7 @@
     <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
     <MESSAGE value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
     <MESSAGE value="queue done, please test" />
-    <option name="LAST_COMMIT_MESSAGE" value="queue done, please test" />
+    <MESSAGE value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
   </component>
 </project>
