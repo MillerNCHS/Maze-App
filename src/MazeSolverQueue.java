@@ -1,8 +1,8 @@
 public class MazeSolverQueue extends MazeSolver {
 
   MyQueue queue;
-  MazeSolverQueue(){
-    super(new Maze()); 
+  MazeSolverQueue(Maze mz){
+    super(mz);
     queue = new MyQueue();
   }
 
