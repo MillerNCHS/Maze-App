@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-public class MyStack implements StackADT<Square> {
+public class  MyStack implements StackADT<Square> {
     private final ArrayList<Square> mazePath;
     MyStack(){
         mazePath = new ArrayList<>();
