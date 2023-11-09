@@ -33,7 +33,6 @@ public abstract class MazeSolver {
     MazeSolver(Maze mz) {
 
         maze = mz;
-        makeEmpty();
         add(maze.getStart());
     }
 

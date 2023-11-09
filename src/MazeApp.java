@@ -13,6 +13,8 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.FileNotFoundException;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 
@@ -170,7 +172,12 @@ public class MazeApp extends JFrame implements ActionListener {
      @Override
      public void actionPerformed(ActionEvent e) {
  	if ( (e.getSource() == loadButton) || (e.getSource() == filename) ){
- 	    loadFile();
+ 	    try {
+			loadFile();
+		} catch (FileNotFoundException e1) {
+			System.out.println("Couldn't load file");
+			e1.printStackTrace();
+		}
  	}
  	if (e.getSource() == solveButton) {
  	    if (mazeLoaded) {
@@ -326,8 +333,10 @@ public class MazeApp extends JFrame implements ActionListener {
 
      /**
       * Load a maze file into the solver.
+     * @throws FileNotFoundException
+     * @throws HeadlessException
       */
-     private void loadFile() {
+     private void loadFile() throws HeadlessException, FileNotFoundException {
 
  	// Let the user pick from a filtered list of files
  	JFileChooser chooser = new JFileChooser(new File("."));

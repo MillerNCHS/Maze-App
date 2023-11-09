@@ -5,22 +5,25 @@ public class Maze{
 
     private Square start;
     private Square finish;
+    private int numRows;
+    private int numCols;
     private Square[][] data;
 
     /**
      * need to change - will
      */
     public Maze(){
-        try {
-            loadMaze("D:\\Documents\\GitHub\\Maze-App\\src\\maze-2");
-        }catch(FileNotFoundException e){
-            System.out.println("error opening/processing file");
-        }
+        start = null;
+        finish = null;
+        numRows = 0;
+        numCols = 0;
+        
+        
     }
 
     public boolean loadMaze (String fname) throws FileNotFoundException {
-        int numRows;
-        int numCols;
+        int numRows = 0;
+        int numCols = 0;
         Scanner scan = new Scanner(new File(fname));
         //gets the size of the maze
         try{
@@ -29,6 +32,7 @@ public class Maze{
             System.out.println("numRows:" + numRows + " numCols:" +numCols);
         }
         catch(Exception e){
+            System.out.println("Couldn't read file");
             return false;
         }
 
@@ -73,11 +77,24 @@ public class Maze{
     }
 
     public Square getStart(){
-        return this.start;
+        
+        for(int i = 0; i < numRows; i++){
+            for(int j = 0; j < numCols; j++){
+                if(data[i][j].getType() == 2)
+                    start = data[i][j];
+            }
+        }
+        return start;
     }
 
     public Square getFinish(){
-        return this.finish;
+        for(int i = 0; i < numRows; i++){
+            for(int j = 0; j < numCols; j++){
+                if(data[i][j].getType() == 3)
+                    finish = data[i][j];
+            }
+        }
+        return finish;
     }
 
     public Square[][] getData() {

@@ -55,11 +55,23 @@ public class Square{
         return this.type;
     }
     public String toString(){
-        return switch (type) {
-            case 0 -> "_";
-            case 1 -> "#";
-            case 2 -> "S";
-            default -> "E";
-        };
-    }
+        String str = "";
+        if (this.type == 0)
+            str += "Empty Space";
+        if (this.type == 1)
+            str += "Empty Space";
+        if (this.type == 2)
+            str += "Empty Space";
+        if (this.type == 3)
+            str += "Empty Space";
+        
+        if (this.status == 'o')
+            str += " - On WorkList";
+        if (this.status == '.')
+            str += " - Has been explored";
+        if (this.status == 'x')
+            str += " - On Solution Path";
+
+        return str;
+        }
 }
