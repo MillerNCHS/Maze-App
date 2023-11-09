@@ -36,7 +36,7 @@ public class Square{
      */
     public void reset(){
         if(this.type != 0 && this.type != 1 && this.type != 2 && this.type != 3){
-            setStatus('0');
+            setStatus((char) 0);
         }
     }
     public void setStatus(char status){
