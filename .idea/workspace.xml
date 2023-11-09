@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="added &quot;previous&quot; variable to square class and methods to access and modify it">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_23__10_41_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_8_23__10_41_AM__Changes_.xml" afterDir="false" />
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="stackSolver 100% works now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze-App/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze-App/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolverQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolverQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +100,7 @@
       <workItem from="1698774363263" duration="2472000" />
       <workItem from="1698861285283" duration="2452000" />
       <workItem from="1699470068558" duration="869000" />
-      <workItem from="1699556187501" duration="906000" />
+      <workItem from="1699556187501" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="implemented stack, needs testing">
       <option name="closed" value="true" />
@@ -133,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699429523915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stackSolver 100% works now">
+      <option name="closed" value="true" />
+      <created>1699557203759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699557203759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +178,7 @@
     <MESSAGE value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
     <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
     <MESSAGE value="completed stackSolver" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed stackSolver" />
+    <MESSAGE value="stackSolver 100% works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="stackSolver 100% works now" />
   </component>
 </project>

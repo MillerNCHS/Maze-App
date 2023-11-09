@@ -76,12 +76,13 @@ public class Square{
             str += " - On Solution Path";
         */
         return switch (type) {
+            //trying to find a monospace font
             case 0 -> "_";
             case 1 -> "#";
             case 2 -> "S";
             case 3 -> "E";
             case 'o' -> "o";
-            case '.' -> ".";
+            case '.' -> "=";
             case 'x' -> "x";
             default -> String.valueOf(type);
         };

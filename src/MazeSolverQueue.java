@@ -3,11 +3,10 @@ public class MazeSolverQueue extends MazeSolver {
   MyQueue queue;
   MazeSolverQueue(Maze mz){
     super(mz);
-    queue = new MyQueue();
   }
 
   public void makeEmpty(){
-    queue.clear();
+    queue = new MyQueue();
   }
 
   public boolean isEmpty(){

@@ -244,7 +244,7 @@ public class MazeApp extends JFrame implements ActionListener {
  	if (newValue>0)
  	    fontSize = newValue;
  	fontField.setText(Integer.toString(fontSize));
- 	mazeDisplay.setFont(new Font("Courier",Font.BOLD, fontSize));
+ 	mazeDisplay.setFont(new Font("Menlo",Font.BOLD, fontSize));
  	pathDisplay.setFont(new Font("Courier",Font.BOLD, fontSize));
 
      }
