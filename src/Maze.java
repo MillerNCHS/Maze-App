@@ -40,7 +40,7 @@ public class Maze{
         for (int row=0; row < numRows; row++) {
             for (int col=0; col < numCols; col++) {
                 int val = scan.nextInt();
-                data[row][col] = new Square(row, col, val);
+                data[row][col] = new Square(row, col, (char)val);
                 if(val == 2){
 
                     start = data[row][col];

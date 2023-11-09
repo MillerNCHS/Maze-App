@@ -2,10 +2,9 @@ public class MazeSolverStack extends MazeSolver{
     private MyStack worklist;
     MazeSolverStack(Maze mz){
         super(mz);
-        worklist = new MyStack();
     }
     public void makeEmpty(){
-        worklist.clear();
+        worklist = new MyStack();
     }
 
     /**
@@ -21,6 +20,7 @@ public class MazeSolverStack extends MazeSolver{
      * @param sq
      */
     public void add(Square sq){
+        //System.out.println(worklist);
         worklist.push(sq);
     }
 

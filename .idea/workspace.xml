@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="added &quot;previous&quot; variable to square class and methods to access and modify it">
-      <change beforePath="$PROJECT_DIR$/src/MazeSolverQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolverQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze-App/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze-App/Maze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolverStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolverStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,7 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2XJQgRuWYOaBqJYIv647lTkXIGL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "queueSolver",
+    "git-widget-placeholder": "mazeSolver",
     "last_opened_file_path": "C:/Users/wxwang/Desktop/github/data-structures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,7 +65,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MazeApp">
+    <configuration name="MazeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeApp" />
+      <module name="Maze-App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MazeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MazeTest" />
       <module name="Maze-App" />
@@ -69,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MazeApp" />
         <item itemvalue="Application.MazeTest" />
       </list>
     </recent_temporary>
@@ -137,7 +151,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="stackSolver" />
                       </list>
                     </value>
                   </entry>
@@ -151,10 +165,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implemented stack, needs testing" />
-    <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
     <MESSAGE value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
     <MESSAGE value="queue done, please test" />
     <MESSAGE value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
+    <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
+    <MESSAGE value="completed stackSolver" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed stackSolver" />
   </component>
 </project>

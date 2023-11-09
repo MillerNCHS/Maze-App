@@ -33,6 +33,7 @@ public abstract class MazeSolver {
     MazeSolver(Maze mz) {
 
         maze = mz;
+        makeEmpty();
         add(maze.getStart());
     }
 
@@ -61,11 +62,12 @@ public abstract class MazeSolver {
             if(current.getType()==3){
                 //recant current worklist into a stack
                 Stack<Square> finalPath = new Stack<>();
-                Square iter = current;
+                Square iter = current.getPrevious();
                 while(iter.getType() != 2){
                     finalPath.push(iter);
+                    iter.solution();
                     iter = iter.getPrevious();
-                    iter.setStatus('X');
+
                 }
 
                 //generating output string...
@@ -94,7 +96,9 @@ public abstract class MazeSolver {
                     break;//should skip to next step and compute ending directly ideally
                 }
             }
-            current.setStatus('.');
+            if(current.getStatus()=='o') {
+                current.setStatus('.');
+            }
         }
         //returns the square stepped
         return current;
