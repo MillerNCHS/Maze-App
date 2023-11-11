@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="stackSolver 100% works now">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze-App/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze-App/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolverQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolverQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="maze" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XJQgRuWYOaBqJYIv647lTkXIGL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mazeSolver&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wxwang/Desktop/github/data-structures&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.MazeApp">
+    <configuration name="MazeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeApp" />
+      <module name="Maze-App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MazeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MazeTest" />
+      <module name="Maze-App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MazeApp" />
+        <item itemvalue="Application.MazeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb278071-791f-4e6a-b257-7419286a5fb2" name="Changes" comment="" />
+      <created>1698344813974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698344813974</updated>
+      <workItem from="1698344815017" duration="38000" />
+      <workItem from="1698427758926" duration="1381000" />
+      <workItem from="1698429269381" duration="749000" />
+      <workItem from="1698774363263" duration="2472000" />
+      <workItem from="1698861285283" duration="2452000" />
+      <workItem from="1699470068558" duration="869000" />
+      <workItem from="1699556187501" duration="2065000" />
+    </task>
+    <task id="LOCAL-00001" summary="implemented stack, needs testing">
+      <option name="closed" value="true" />
+      <created>1698863501264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698863501264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="worked on maze and mazetest to troubleshoot, currently having fileIO issues">
+      <option name="closed" value="true" />
+      <created>1699327622232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699327622232</updated>
+    </task>
+    <task id="LOCAL-00003" summary="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path.">
+      <option name="closed" value="true" />
+      <created>1699353756901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699353756901</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added &quot;previous&quot; variable to square class and methods to access and modify it">
+      <option name="closed" value="true" />
+      <created>1699429523915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699429523915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="stackSolver 100% works now">
+      <option name="closed" value="true" />
+      <created>1699557203759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699557203759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="stackSolver" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="implemented stack, needs testing" />
+    <MESSAGE value="maze and mazetest should be functional now, fixed getNeighbors(please test), improved clarity of outputs in mazeTest fileIO still not working as intended, has to use absolute path." />
+    <MESSAGE value="queue done, please test" />
+    <MESSAGE value="added &quot;previous&quot; variable to square class and methods to access and modify it" />
+    <MESSAGE value="worked on maze and mazetest to troubleshoot, currently having fileIO issues" />
+    <MESSAGE value="completed stackSolver" />
+    <MESSAGE value="stackSolver 100% works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="stackSolver 100% works now" />
+  </component>
+</project>
