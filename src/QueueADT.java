@@ -1,47 +1,137 @@
 import java.util.NoSuchElementException;
 
-/**
- * An parameterized interface for the Queue Abstract Data Type
- *
- * @author Benjamin Kuperman (Spring 2005, Spring 2012, Spring 2014)
- */
-
-public interface QueueADT<T> {
-    /**
-     * Add an item to the queue
-     * @param item the data item to add (of type T)
-     */
-    void enqueue(T item);
+public class MyQueue<T> implements QueueADT<T>
+{    
+    private Node<T> first, last;
+    public MyQueue()
+    {
+        this.first = null;
+    }
+    
+    
+    
+    public void enqueue(T element)
+    {
+        if(size() == 0)
+        {
+            first = new Node<T>(element, null);
+            last = first;
+        }
+        
+        else
+        {
+        Node<T> node = new Node<T>(element, null);
+        last.next = node;
+        this.last = node;
+        }
+    }
 
     /**
      * Remove the front item from the queue
      * @return the front item in the queue
      * @throws NoSuchElementException if the queue is empty
      */
-    T dequeue() throws NoSuchElementException;
+
+
+    
+    public T dequeue()
+    {
+        if (this.first == null)
+        {
+            throw new NoSuchElementException();
+        }
+
+        
+        T element = this.first.data;
+        
+        if(this.first.equals(this.last))
+        {
+            this.first = null;
+            this.last = null;
+            return element;
+        } 
+            
+        else 
+        {
+            this.first = this.first.next;
+            return element;
+        }
+    }
 
     /**
      * Return the front item in the queue without removing it
      * @return the front item in the queue
      * @throws NoSuchElementException if the queue is empty
      */
-    T front() throws NoSuchElementException;
+
+
+    
+    public T front()
+    {
+        if (this.first == null)
+        {
+            throw new NoSuchElementException();
+        }
+            
+        else
+        {
+        return this.first.data;
+        }
+    }
 
     /**
      * Find how many items are in the queue
      * @return the number of items in the queue
      */
-    int size();
+
+
+    
+    public int size()
+    {
+        if(last == null && first == null)
+        {
+            return 0;
+        }
+        
+        Node<T> var = first;
+        int i = 1;
+        
+        while(var.next != null)
+        {
+            var = var.next;
+            //System.out.println(var.data);
+            i++;  
+        }
+        return i;
+    }
 
     /**
      * Determine if the queue is empty
      * @return true if the size is 0, false otherwise
      */
-    boolean isEmpty();
+
+
+    
+    public boolean isEmpty()
+    {
+        if(this.first==null)
+        {
+            return true;
+        }
+        
+        return false;
+    }
 
     /**
      * Clear out the data structure
      */
-    void clear();
 
+
+    
+    public void clear()
+    {
+        this.first = null;
+        this.last = null;
+    }
+    
 }
